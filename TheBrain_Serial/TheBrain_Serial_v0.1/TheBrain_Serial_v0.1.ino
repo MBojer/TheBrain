@@ -9,5 +9,7 @@ String Serial_CLI_Input;
 
 // --------------------------------------------- Serial CLI Relay ---------------------------------------------
 
-int Serial_CLI_Relay_Begin_Pin = 4;
-int Serial_CLI_Relay_End_Pin = 12;
+int Serial_CLI_Relay_Begin_Pin = 22;
+int Serial_CLI_Relay_End_Pin = 29;
+
+
