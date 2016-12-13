@@ -9,5 +9,4 @@ void setup() {
   Serial.print("Software Version: ");
   Serial.println(Software_Version);
 
-  
 }
