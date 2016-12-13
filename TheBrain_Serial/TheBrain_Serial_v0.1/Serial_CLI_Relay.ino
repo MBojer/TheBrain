@@ -7,18 +7,20 @@ void Serial_CLI_Relay(int Serial_CLI_Relay_Number, int Serial_CLI_Relay_Starting
     return;    
     }
 
-  Serial.println(digitalRead(Serial_CLI_Relay_Number));
+  Serial_CLI_Relay_Number = Serial_CLI_Relay_Number + Serial_CLI_Relay_Begin_Pin - 1;
+
+  pinMode(Serial_CLI_Relay_Number, OUTPUT);
 
   if (digitalRead(Serial_CLI_Relay_Number) == 0) {
     Serial.print("Switching relay number ");
-    Serial.print(Serial_CLI_Relay_Number);
+    Serial.print(Serial_CLI_Relay_Number - Serial_CLI_Relay_Begin_Pin + 1);
     Serial.println(" ON");
     digitalWrite(Serial_CLI_Relay_Number, 1);
     }
 
   else {
     Serial.print("Switching relay number ");
-    Serial.print(Serial_CLI_Relay_Number);
+    Serial.print(Serial_CLI_Relay_Number - Serial_CLI_Relay_Begin_Pin + 1);
     Serial.println(" OFF");
     digitalWrite(Serial_CLI_Relay_Number, 0);
     }
