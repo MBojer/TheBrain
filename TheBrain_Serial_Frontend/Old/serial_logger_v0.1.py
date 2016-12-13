@@ -25,7 +25,7 @@ while not connected:
 
 ## open text file to store the current 
 ##gps co-ordinates received from the rover    
-Log_File = open("/media/usbtick/TheBrawn.log", 'w')
+Log_File = open("TheBrawn.log", 'w')
 
 
 ## read serial data from arduino and 

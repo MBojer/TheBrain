@@ -1,6 +1,16 @@
+/* 
+*   Bojer was here - The Brain Frontend Serial
+*/ 
+
 // --------------------------------------------- Misc ---------------------------------------------
 
-String Software_Version = "The Brain - CLI v0.1";
+#include "Wire.h"
+#define DS3231_I2C_ADDRESS 0x68
+
+
+// --------------------------------------------- Misc ---------------------------------------------
+
+String Software_Version = "The Brain - Frontend v0.2";
 
 
 // --------------------------------------------- Serial CLI ---------------------------------------------
