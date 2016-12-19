@@ -4,7 +4,9 @@ void loop() {
 
   Serial_CLI();
 
-  Voltmeter(Voltmeter_Array_Number, );
+  Voltmeter(Voltmeter_Using_Average_Number);
+
+  Voltmeter_Low_Voltage();
 
   delay(Loop_Delay);
 

@@ -13,6 +13,13 @@ void setup() {
   pinMode(Wireless_Button_D, INPUT);
 
 
+  // --------------------------------------------- Buzzer ---------------------------------------------
+
+  pinMode(Buzzer_Pin, OUTPUT);
+
+  Buzzer(75, 1);
+
+
   // --------------------------------------------- Serial ---------------------------------------------
 
   Serial.begin(115200);
@@ -23,17 +30,9 @@ void setup() {
   Serial.print("Software Version: ");
   Serial.println(Software_Version);
 
-  Buzzer(75, 1);
-
 
   // --------------------------------------------- Voltmeter ---------------------------------------------
 
   pinMode (Voltmeter_Using_Pin, INPUT);
-
-
-  // --------------------------------------------- Buzzer ---------------------------------------------
-
-  pinMode(Buzzer_Pin, OUTPUT);
-
 
 } // End marker for Setup

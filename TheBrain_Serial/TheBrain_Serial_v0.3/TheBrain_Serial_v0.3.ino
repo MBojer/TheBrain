@@ -40,17 +40,17 @@ bool Serial_Print_New_Line;
 
 // --------------------------------------------- Buzzer ---------------------------------------------
 
-#define Buzzer_Pin 40
+#define Buzzer_Pin 7
 
 
 // --------------------------------------------- Voltmeter ---------------------------------------------
 
 #define Voltmeter_Using_Pin A15
 
-int Voltmeter_Array_Number;
+int Voltmeter_Using_Average_Number;
 
 float Voltmeter_Using;
-float Voltmeter_Using_Array[21]
+float Voltmeter_Using_Average[21];
 
 
 // --------------------------------------------- Voltmeter Low Voltage Alarm ---------------------------------------------
